@@ -42,3 +42,13 @@ It recomended that the packages are installed in a new environment. Conda can be
 
 This can help to avoid dependancy issues.
 
+________________________________________________
+-usefull links
+
+https://gdal.org/
+
+https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites
+
+https://conda.io/projects/conda/en/latest/index.html
+
+
