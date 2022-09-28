@@ -43,7 +43,7 @@ It recomended that the packages are installed in a new environment. Conda can be
 This can help to avoid dependancy issues.
 
 ________________________________________________
--usefull links
+-Some related links
 
 https://gdal.org/
 
