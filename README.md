@@ -16,7 +16,7 @@ The Modified Normalized Difference Water Index (MNDWI) uses green and SWIR bands
 Normalized Difference Moisture Index (NDMI) is used to determine vegetation water content.
 #### NDMI = (NIR–SWIR1)/(NIR + SWIR1)
 
-#### Automated Water Extraction Index (AWEI)
+#### Automated Water Extraction Index (AWEI):
 AutomatedWater Extraction Index (AWEI) have high in detecting water even in areas that include shadow and dark surfaces.
 #### AWEI = 4 ∗ (Green − SWIR2) − (0.25 ∗ NIR + 2.75 ∗ SWIR1)
 _______________________________________________________________________________________________
