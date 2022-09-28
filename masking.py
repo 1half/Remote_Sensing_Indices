@@ -38,9 +38,6 @@ def get_contour(path_input,contourPath):
     fieldDef = ogr.FieldDefn("elev", ogr.OFTReal)
     contourShp.CreateField(fieldDef)
                   
-    #Write shapefile using noDataValue
-    #ContourGenerate(Band srcBand, double contourInterval, double contourBase, int fixedLevelCount, int useNoData, double noDataValue, 
-    #                Layer dstLayer, int idField, int elevField
     gdal.ContourGenerate(rasterBand, 50.0, 1250.0, [], 1, -32768., 
                          contourShp, 0, 1)
     contourDs.Destroy()
@@ -48,6 +45,7 @@ def get_contour(path_input,contourPath):
 
 
 def cut_line_at_points(line, points):
+    
 
     # First coords of line
     coords = list(line.coords)
@@ -84,7 +82,11 @@ def cut_line_at_points(line, points):
 
 def Get_mask(shape_line,mask_OutPath):
     
-    fileNm = pathlib.PurePath(path_input).name
+    new_line = LineString([Point(143693,1321428),Point(144030,1322160),Point(144108.3,1322621.4),Point(144215.6,1323074.2)])
+
+    IntersectionLines=gpd.GeoSeries([new_line])
+    
+    fileNm = pathlib.PurePath(shape_line).name
     
     cn_line = gpd.read_file(shape_line)
     cn_line['length'] = cn_line.length
