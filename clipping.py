@@ -2,6 +2,9 @@ import numpy as np
 from osgeo import gdal,ogr,osr
 import glob,os,pathlib
 
+'''
+ This file have multiple functions, One to create bound box with cordinate and clip with that. Clip with an existing shape file(which is what is used)
+'''
 def Create_boundBox(shape_save_path,projection):
     """
     shape_save_path : Path to which the created shape file is saved.
